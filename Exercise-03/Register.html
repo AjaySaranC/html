@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <script>  
+        function validateform(){  
+        var name=document.myform.name.value;  
+        var password=document.myform.password.value;
+        var age=document.myform.age.value;
+        var mobile=document.myform.mobile.value;
+        var about=document.myform.about.value;   
+          
+        if (name==null || name==""){  
+          alert("Name can't be blank");  
+          return false;  
+        }else if(password.length<6){  
+          alert("Password must be at least 6 characters long.");  
+          return false;  
+          }
+          else if(!(age>1 && age<100)){
+            alert("Enter Correct age");
+            return false;
+          }
+          else if(mobile.length<10)
+          {
+            alert("Invalid mobile number");
+            return false;
+          }
+          else if(about==null || about=="")
+          {
+            alert("Write something on about");
+            return false;
+         }
+
+        }  
+        </script>  
+   
+    <title>page2</title>
+</head>
+<body style="background-color: antiquewhite;">
+    <center>
+    <form name="myform" method="post" action="pg3.html" onsubmit="return validateform()" >  
+        Name: <input type="text" name="name"><br/> <br> 
+        Password: <input type="password" name="password"><br/><br> 
+        Age:  <input type="number" name="age"><br> <br>
+        Mobile: <input type="text" name="mobile"><br><br>
+        About you:<input type="text" name="about"><br><br>
+        <input type="submit" value="register">  <br><br>
+        </form>  
+    </center>
+   
+</body>
+</html>
