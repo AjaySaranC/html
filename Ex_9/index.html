@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+<title>User information from XML </title>
+<script>
+function readXMLData()
+{
+var xmlDocumentObject, id , name , addr, phone, email; 
+xmlDocumentObject=new XMLHttpRequest(); 
+xmlDocumentObject.open("GET","players.xml",false); 
+xmlDocumentObject.send(); 
+xmlDocumentObject= xmlDocumentObject.responseXML; 
+id = xmlDocumentObject.getElementsByTagName("pid");
+name = xmlDocumentObject.getElementsByTagName("pname"); 
+country = xmlDocumentObject.getElementsByTagName("country"); 
+favmovie = xmlDocumentObject.getElementsByTagName("favmovie"); 
+favhero = xmlDocumentObject.getElementsByTagName("favhero");
+var found = 0;
+for (i = 0; i < id.length; i++)
+{
+output=id[i].firstChild.nodeValue;
+if (output == document.getElementById("myText").value)
+{
+found=1; break;
+}
+}
+if(found==1)
+{
+displayDIV.innerHTML = "<table border='1'><tr><th>User ID</th><td>"+id[i].firstChild.nodeValue +
+"</td></tr><tr><th>User name</th><td> " + name[i].firstChild.nodeValue +
+"</td></tr><tr><th>Address</th><td> "
++country[i].firstChild.nodeValue +
+"</td></tr><tr><th>Mobile</th><td> "
++favmovie[i].firstChild.nodeValue +
+"</td></tr><tr><th>Email</th><td>"+favhero[i].fir
+ 
+stChild.nodeValue+
+
+}
+else
+{
+ 
+
+"</td></tr></table>";
+ 
+displayDIV.innerHTML = "<p>User not found !!</p>";
+}
+ 
+}
+</script>
+</head>
+<body>
+<h1>Search Character</h1>
+<input type="text" id="myText" value="">
+<input type="BUTTON" VALUE="Get Character Details" ONCLICK= "readXMLData()">
+<P>
+<div ID="displayDIV"> </div>
+</body>
+</html>

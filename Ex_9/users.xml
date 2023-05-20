@@ -1,0 +1,63 @@
+<charlist>
+
+<pid>p01</pid>
+<pname>Aa</pname>
+<country>India</country>
+<favmovie>Batman</favmovie>
+<favhero>batman</favhero>
+
+<pid>p02</pid>
+<pname>Lbb</pname>
+<country>America</country>
+<favmovie>Dark knight</favmovie>
+<favhero> Dark knight </favhero>
+
+<pid>p03</pid>
+<pname>fdj</pname>
+<country>England</country>
+<favmovie>GreenLantern</favmovie>
+<favhero>GreenLantern</favhero>
+
+<pid>p04</pid>
+<pname>aj</pname>
+<country>India</country>
+<favmovie>JusticeLeague</favmovie>
+<favhero>Flash</favhero>
+
+<pid>p05</pid>
+<pname>Abc</pname>
+<country>China</country>
+<favmovie>Suicide Squads</favmovie>
+<favhero>joker</favhero>
+
+<pid>p06</pid>
+<pname>ok</pname>
+<country>Srilanka</country>
+<favmovie>Dawn of justice</favmovie>
+<favhero>Superman</favhero>
+
+<pid>p07</pid>
+<pname>xyz</pname>
+<country>Dubai</country>
+<favmovie>Man Of Steel</favmovie>
+<favhero>Superman</favhero>
+
+<pid>p08</pid>
+<pname>Bcd</pname>
+<country>Malaysia</country>
+<favmovie>Znyder Cut</favmovie>
+<favhero>Batman</favhero>
+
+<pid>p09</pid>
+<pname>JKh</pname>
+<country>India</country>
+<favmovie>The batman</favmovie>
+<favhero>Batman</favhero>
+
+<pid>p10</pid>
+<pname>AJ</pname>
+<country>India</country>
+<favmovie>The Dark knight Rises</favmovie>
+<favhero>Batman</favhero>
+
+</charlist>
